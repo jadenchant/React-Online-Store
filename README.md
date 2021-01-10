@@ -1,3 +1,5 @@
 # React-Online-Store
 
-Bruh
+v0.1
+Remove Boilerplate code
+
