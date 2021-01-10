@@ -1,5 +1,5 @@
-# React-Online-Store
+# **React-Online-Store**
 
-v0.1
-Remove Boilerplate code
+## **v0.1**
+### Remove Boilerplate code
 
