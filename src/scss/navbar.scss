@@ -20,11 +20,7 @@
   width: 50px;
 }
 
-.navigation{
-  
-}
-
-ul{
+.navigation ul{
   box-sizing: border-box;
   list-style-type: none;
   display: flex;
@@ -38,19 +34,19 @@ ul{
 
 }
 
-li{
+.navigation li{
   text-align: center;
   padding: .5em;
   cursor: pointer;
   
 }
 
-li:hover{
+.navigation li:hover{
   background-color: plum;
   color: white;
 }
 
-li a{
+.navigation li a{
   text-decoration: none;
   color: inherit;
 }

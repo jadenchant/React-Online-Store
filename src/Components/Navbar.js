@@ -1,12 +1,12 @@
 import React,{useEffect} from 'react';
-import '../navbar.css';
+import '../css/navbar.css';
 
 const Navbar=() => {
   const [scrolled,setScrolled] = React.useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if(offset > 100 ){
+    if(offset > 150 ){
       setScrolled(true);
     }
     else{

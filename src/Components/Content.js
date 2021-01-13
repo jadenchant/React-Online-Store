@@ -1,5 +1,5 @@
 import React from 'react';
-import '../content.css';
+import '../css/content.css';
 const Content=() => {
     const data=(
         <div className="box">
@@ -8,6 +8,8 @@ const Content=() => {
     );
     return (
         <main className="content">
+            {data}
+            {data}
             {data}
             {data}
             {data}
