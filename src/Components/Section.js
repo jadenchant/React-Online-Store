@@ -5,14 +5,11 @@ const Section=(props) => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-    const productsPaths = [
-        './Products/suggested.json',
-        './Products/popular.json',
-        './Products/new.json'
-    ];
+    const productsPaths = "./products.json";
+
     useEffect((props) => {
-        axios.get(productsPaths[0])
-        .then(res => console.log(res.data.suggested))
+        axios.get(productsPaths)
+        .then(res => console.log(res.data))
         .then(
             (result) => {
                 setIsLoaded(true);
