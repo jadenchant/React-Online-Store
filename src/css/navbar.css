@@ -14,8 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #eee;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .scrolled {
@@ -45,18 +45,18 @@
           align-items: center;
 }
 
-.navigation li {
+.navigation ul li {
   text-align: center;
   padding: .5em;
   cursor: pointer;
 }
 
-.navigation li:hover {
+.navigation ul li:hover {
   background-color: plum;
   color: white;
 }
 
-.navigation li a {
+.navigation ul li a {
   text-decoration: none;
   color: inherit;
 }

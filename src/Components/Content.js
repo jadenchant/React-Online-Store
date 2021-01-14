@@ -1,4 +1,6 @@
 import React from 'react';
+import Section from './Section';
+import Product from './Product';
 import '../css/content.css';
 const Content=() => {
     const data=(
@@ -11,8 +13,9 @@ const Content=() => {
             {data}
             {data}
             {data}
-            {data}
-            {data}
+            {/* <Section>
+                <Product />
+            </Section> */}
         </main>
     );
 }
