@@ -1,8 +1,11 @@
 # React-Online-Store
 
-### v0.1 Remove Boilerplate code
+### Created by: Jaden Chant
 
-### v0.2 Navbar Complete
+## Versions
+
+- v0.1 Remove Boilerplate code
+- v0.2 Navbar Complete
 
 ## Need To Do
 
