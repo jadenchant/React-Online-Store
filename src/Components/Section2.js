@@ -1,26 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const Section=(props) => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [productID, setProductID] = useState({ id: [] });
-    const [productName, setProductName] = useState({ name: [] });
-    const [productIMG, setProductIMG] = useState({ img: [] });
-    const [productPrice, setProductPrice] = useState({price: []});
+    const [products, setProducts] = useState(null);
     const productsPaths = "./Products/" + props.name + ".json";
     // const numProducts = 6;
 
-    useEffect(() => {
+    if(!products) {
         axios.get(productsPaths)
-        // .then(res => console.log(res.data))
+        .then(res => console.log(res.data))
         .then(
             (result) => {
                 setIsLoaded(true);
-                setProductID(result.data.list.id);
-                setProductName(result.data.list);
-                setProductIMG(result.data.list);
-                setProductPrice(result.data.list);
+                setProducts()
                 console.log(productID);
             },
             (error) => {
@@ -28,8 +22,9 @@ const Section=(props) => {
                 setError(error);
             }
         );
-        
-    });
+    }
+    
+
 
     if(error) {
         return <div>Error: {error.message}</div>;

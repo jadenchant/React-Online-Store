@@ -12,4 +12,5 @@
 1. UI for Products
    - Scrolling Caracell?
    - Basic showing items from json
-2. Other pages using next.js
+2. Other dynamic pages using next.js?
+3. Gatsby?

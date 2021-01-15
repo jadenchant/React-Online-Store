@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from './Section';
+import Section from './Section2';
 import '../css/content.css';
 const Content=(props) => {
 
