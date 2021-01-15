@@ -1,3 +1,12 @@
-# **React-Online-Store**
+# React-Online-Store
 
-## **v0.1** Remove Boilerplate code
+### v0.1 Remove Boilerplate code
+
+### v0.2 Navbar Complete
+
+## Need To Do
+
+1. UI for Products
+   - Scrolling Caracell?
+   - Basic showing items from json
+2. Other pages using next.js
