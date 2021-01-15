@@ -1,10 +1,16 @@
 .content {
   width: 80%;
-  margin: 2rem 10% 0 10%;
+  margin: 4rem 10% 0 10%;
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100vh;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.content-scrolled {
+  padding-top: 16vh;
 }
 
 .box {
