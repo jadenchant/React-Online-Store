@@ -8,7 +8,7 @@ function App() {
 
     const handleScroll = () => {
         const offset = window.scrollY;
-        if(offset > 50){
+        if(offset > 40){
         setScrolled(true);
         }
         else{
