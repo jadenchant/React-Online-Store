@@ -21,7 +21,8 @@ class Section extends React.Component {
             this.setState({
                 products: data.data.children
             });
-        });
+        })
+        .catch((err) => {console.log(err)});
     }
 
     render() {
