@@ -4,7 +4,7 @@ import axios from 'axios';
 const Section=(props) => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [products, setProducts] = useState(null);
+    const [products, setProducts] = useState([]);
     const productsPaths = "./Products/" + props.name + ".json";
     // const numProducts = 6;
 
@@ -14,8 +14,7 @@ const Section=(props) => {
         .then(
             (result) => {
                 setIsLoaded(true);
-                setProducts()
-                console.log(productID);
+                setProducts(result);
             },
             (error) => {
                 setIsLoaded(true);
@@ -33,7 +32,7 @@ const Section=(props) => {
     } else {
         return (
             <div className={props.name}>
-                {/* {productID} */}
+                {products.data.list[0].name}
             </div>
         );
     }
