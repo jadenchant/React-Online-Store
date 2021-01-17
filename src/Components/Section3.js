@@ -7,7 +7,7 @@ class Section extends React.Component {
 
         this.state = {
             productList: props.name,
-            products: []
+            products: {}
         }
     }
 
@@ -15,20 +15,21 @@ class Section extends React.Component {
         const productsPaths = "./Products/" + this.state.productList + ".json";
 
         axios.get(productsPaths)
-        .then(res => res.data)
-        .then(res => console.log(res.data))
-        .then(({ data }) => {
+        // .then(res => console.log(res.data))
+        .then(res =>
             this.setState({
-                products: data.data.children
-            });
-        })
+                products: res.data
+            })
+        )
         .catch((err) => {console.log(err)});
     }
 
     render() {
+        // console.log(this.state.products.list[0].name);
         return (
             <div className={this.state.productList}>
-                {/* {products.list[0].name} */}
+                <p>{this.state.products.data}</p>
+                
             </div>
         );
     }
