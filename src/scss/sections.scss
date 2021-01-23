@@ -16,8 +16,9 @@
         height: 40vh;
         max-width: 25%;
         display: inline-flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        
 
         &-name {
             font-weight: 750;
