@@ -1,6 +1,7 @@
 .content {
   position: relative;
   width: 80%;
+  z-index: -1;
   margin: 0 10% 0 10%;
   max-width: 100%;
   -webkit-box-sizing: border-box;
@@ -10,13 +11,9 @@
   transition: all .3s ease;
 }
 
-.content-scrolled {
-  padding-top: 28vh;
-  z-index: -1;
-}
-
 .box {
   width: 80%;
+  z-index: -1;
   margin: 2rem 10% 0 10%;
   height: 100vh;
   background-color: plum;

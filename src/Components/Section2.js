@@ -9,14 +9,13 @@ const Section=(props) => {
     // const numProducts = 6;
 
     useEffect(() => {
-        console.log(productName); 
-        console.log(products);
-        if(!products) {
-            const productsPaths = "./Products/" + productName + ".json";
+        // console.log(productName); 
+        // console.log(products);
+        if(products === null) {
+            const productsPaths = './Products/' + productName + '.json';
             console.log(productsPaths);
             axios.get(productsPaths)
             .then(res => res.data)
-            // .then(res => console.log(res))
             .then(
                 (res) => {
                     setIsLoaded(true);
@@ -29,16 +28,26 @@ const Section=(props) => {
                 }
             );
         }
-    }, [products, productName])
+    }, [products, productName]);
 
     if(error) {
         return <div>Error: {error.message}</div>;
     } else if(!isLoaded) {
         return <div>Loading...</div>;
     } else {
+        console.log(products);
+        // const items = products.list.map((item) =>
+        //     <li key={item.id.toString()}>
+        //         <h4 className='item-name'>{item.name}</h4>
+        //         <h5 className='item-price'>{item.price}</h5>
+        //         <img className='item-img' src={item.img} alt={item.name} />
+        //     </li>
+        // );
         return (
             <div className={props.name}>
-                {products.list[0].name}
+                <ul>
+                    {/* {items} */}
+                </ul>
             </div>
         );
     }

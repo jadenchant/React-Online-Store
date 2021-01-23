@@ -1,0 +1,12 @@
+.invisible-slide {
+    position: relative;
+    
+    height: 10vh;
+    width: 100vw;
+    transition: all 0.3s ease;
+}
+
+.slideAction {
+    height: 30vh;
+    z-index: -1;
+}
