@@ -1,0 +1,36 @@
+.section {
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    margin: 2vh 5% 2vh 5%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+
+    ul .item {
+        // Temperary
+        border-style: solid;
+        border-color: black;
+        // Temp
+
+        height: 40vh;
+        max-width: 25%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &-name {
+            font-weight: 750;
+
+        }
+
+        &-img{
+            height: 10%;
+            width: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
