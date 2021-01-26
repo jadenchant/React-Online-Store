@@ -1,11 +1,17 @@
 .section {
     position: relative;
     width: 90%;
-    height: 80vh;
+    height: 90vh;
     margin: 2vh 5% 2vh 5%;
     box-sizing: border-box;
     align-items: center;
-    justify-content: flex-start;
+    justify-items: center;
+
+    .title {
+        align-self: flex-start;
+        justify-self: flex-start;
+        text-transform: uppercase;
+    }
 
     ul .item {
         // Temperary
@@ -14,21 +20,33 @@
         // Temp
 
         height: 40vh;
-        max-width: 25%;
+        max-width: 32%;
         display: inline-flex;
-        align-items: flex-start;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.2rem;
         
+        &-img{
+            position: relative;
+            max-height: 70%;
+            width: 70%;
+            margin-top: 2%;
+        }
 
         &-name {
+            position: relative;
+            margin-top: 2%;
+            margin-bottom: 2%;
             font-weight: 750;
-
+            text-transform: uppercase;
+            display: table;
         }
 
-        &-img{
-            height: 10%;
-            width: 10%;
+        &-price {
+            position: relative;
+            margin-bottom: 2%;
         }
+        
     }
 }
 

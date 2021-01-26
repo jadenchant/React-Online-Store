@@ -7,11 +7,8 @@ const Section=(props) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [products, setProducts] = useState(null);
     const [productName] = useState(props.name);
-    // const numProducts = 6;
 
     useEffect(() => {
-        // console.log(productName); 
-        // console.log(products);
         if(products === null) {
             const productsPaths = './Products/' + productName + '.json';
             console.log(productsPaths);
@@ -48,6 +45,7 @@ const Section=(props) => {
         );
         return (
             <div className="section">
+                <h2 className='title'>{props.name}</h2>
                 <ul className={props.name}>
                     {items}
                 </ul>

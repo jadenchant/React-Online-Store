@@ -4,11 +4,6 @@ import PushDownContent from './PushDownContent';
 import '../css/content.css';
 const Content=() => {
 
-    // let x=['content'];
-    // if(props.scrolled){
-    //     x.push('content-scrolled');
-    // }
-
     const data=(
         <div className="box">
             <h2>Div Content</h2>
@@ -18,12 +13,6 @@ const Content=() => {
     return (
         <main className="content">
             <PushDownContent />
-            {data}
-            {data}
-            {data}
-            {data}
-            {data}
-            {data}
             <Section name="suggested" />
             <Section name="popular" />
         </main>
