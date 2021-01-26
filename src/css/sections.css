@@ -1,7 +1,5 @@
 .section {
   position: relative;
-  width: 90%;
-  height: 90vh;
   margin: 2vh 5% 2vh 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,8 +18,10 @@
 
 .section ul .item {
   border-style: solid;
+  border-width: 5px;
+  border-radius: 3%;
   border-color: black;
-  height: 40vh;
+  height: 40%;
   max-width: 32%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -55,5 +55,17 @@
 .section ul .item-price {
   position: relative;
   margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 760px) {
+  .section ul .item {
+    max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section ul .item {
+    max-width: 24%;
+  }
 }
 /*# sourceMappingURL=sections.css.map */

@@ -1,7 +1,5 @@
 .section {
     position: relative;
-    width: 90%;
-    height: 90vh;
     margin: 2vh 5% 2vh 5%;
     box-sizing: border-box;
     align-items: center;
@@ -16,10 +14,12 @@
     ul .item {
         // Temperary
         border-style: solid;
+        border-width: 5px;
+        border-radius: 3%;
         border-color: black;
         // Temp
 
-        height: 40vh;
+        height: 40%;
         max-width: 32%;
         display: inline-flex;
         flex-direction: column;
@@ -50,6 +50,18 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
+    .section {
+        ul .item {
+            max-width: 48%;
+        }
+    }
+}
 
+@media only screen and (min-width: 1200px) {
+    .section {
+        ul .item {
+            max-width: 24%;
+        }
+    }
 }

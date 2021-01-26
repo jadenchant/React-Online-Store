@@ -3,38 +3,38 @@
     [
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0001"
         },
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0002"
         },
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0003"
         },
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0004"
         },
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0005"
         },
         {
             "name": "banana",
-            "img": "https://i.pinimg.com/originals/bc/d2/55/bcd2551c94d37218946643e30be2d102.jpg",
-            "price": "4.99",
+            "img": "https://i.pinimg.com/originals/02/b7/15/02b7151ae1e9d77ed54c614d5742e77b.png",
+            "price": "$6.99",
             "id": "0006"
         }
     ]
