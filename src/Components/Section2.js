@@ -3,39 +3,36 @@ import axios from 'axios';
 import '../css/sections.css';
 
 const Section=(props) => {
-    const [error, setError] = useState(null);
+    const [err, setErr] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [products, setProducts] = useState(null);
     const [productName] = useState(props.name);
 
     useEffect(() => {
         if(products === null) {
-            const productsPaths = './Products/' + productName + '.json';
-            console.log(productsPaths);
+            const productsPaths = './Products/' + productName + 'json';
             axios.get(productsPaths)
             .then(res => res.data)
-            .then(
-                (res) => {
-                    setIsLoaded(true);
-                    setProducts(res);
-                    console.log(res);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
+            .then( (res) => {
+                setIsLoaded(true);
+                setProducts(res);
+                console.log(res);
+            })
+            .catch( (error) => {
+                setIsLoaded(true);
+                setErr(error);
+                console.log(error);
+            });
         }
     }, [products, productName]);
 
-    if(error) {
-        return <div>Error: {error.message}</div>;
+    if(err) {
+        return <div>Error: {err.message}</div>;
     } else if(!isLoaded) {
         return <div>Loading...</div>;
     } else if(!products) {
         return <div>Null Products</div>;
     } else {
-        console.log(products);
         const items = products.list.map((item) =>
             <li className='item' key={item.id.toString()}>
                 <img className='item-img' src={item.img} alt={item.name} />
