@@ -14,17 +14,15 @@ const Section=(props) => {
             console.log(productsPaths);
             axios.get(productsPaths)
             .then(res => res.data)
-            .then(
-                (res) => {
-                    setIsLoaded(true);
-                    setProducts(res);
-                    console.log(res);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
+            .then( (res) => {
+                setIsLoaded(true);
+                setProducts(res);
+                console.log(res);
+            })
+            .catch( (error) => {
+                setIsLoaded(true);
+                setError(error);
+            });
         }
     }, [products, productName]);
 
