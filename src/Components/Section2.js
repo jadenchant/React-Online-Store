@@ -10,7 +10,7 @@ const Section=(props) => {
 
     useEffect(() => {
         if(products === null) {
-            const productsPaths = './Products/' + productName + 'json';
+            const productsPaths = './Products/' + productName + '.json';
             axios.get(productsPaths)
             .then(res => res.data)
             .then( (res) => {

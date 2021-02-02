@@ -1,18 +1,17 @@
 import React, {useEffect} from 'react';
-
+import Logo from '../react_store.svg';
 import '../css/navbar.css';
 
 const Navbar=() => {
-
     const [scrolled,setScrolled] = React.useState(false);
 
     const handleScroll = () => {
         const offset = window.scrollY;
         if(offset > 5){
-        setScrolled(true);
+            setScrolled(true);
         }
         else{
-        setScrolled(false);
+            setScrolled(false);
         }
     }
     useEffect(() => {
@@ -26,7 +25,7 @@ const Navbar=() => {
     return (
         <header className={x.join(" ")}>
             <div className="logo">
-                {/* <img src={Logo} alt="Logo" title="Logo" /> */}
+                <img src={Logo} alt="Logo" title="Logo" />
             </div>
 
             <nav className="navigation">
