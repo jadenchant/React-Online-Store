@@ -11,8 +11,5 @@
 
 ## Need To Do
 
-1. UI for Products
-   - Scrolling Caracell?
-   - Basic showing items from json
-2. Other dynamic pages using next.js?
-3. Gatsby?
+1. Light mode or dark mode
+2. Fix the icon
